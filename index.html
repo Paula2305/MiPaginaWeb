@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <script src="https://kit.fontawesome.com/a8568055c8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Paula Moreno - Portfolio</title>
+</head>
+
+<body>
+    <!-- INICIO -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1> /PM/ </h1>
+                    <nav id="nav">
+                        <ul id="links" class="">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)" >Inicio</a> </li>
+                            <li><a href="#sobre-mi" onclick="seleccionar(this)" >Sobre mi</a> </li>
+                            <li><a href="#cursos" onclick="seleccionar(this)" >Cursos</a></li>
+                            <li><a href="#proyectos" onclick="seleccionar(this)" >Proyectos</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)" >Contacto</a></li>
+                        </ul>
+                    </nav>
+                    <!-- menú responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <!-- redes sociales -->
+                    <div class="redes">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-github"></i></a>
+                    </div>
+                </div>
+            </header>
+
+            <div class="presentacion">
+                <h2> Paula Moreno </h2>
+                <p class="descripcion"> Desarrolladora Web Full Stack </p>
+                <a href="">Ir a portfolio</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Sobre mi -->
+    <section id="sobre-mi">
+        <div class="contenedor-foto">
+            <img src="../img/yo.jpg" alt="">
+        </div>
+
+        <div class="sobre-mi">
+            <p class="titulo-seccion"> Sobre mi </p>
+            <h2> Hola, soy <span>Paula Moreno</span></h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum optio animi velit asperiores cum magni
+                distinctio, perferendis corporis impedit? Odio.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate, accusamus.</p>
+            <a href="#">Descargar CV</a>
+
+        </div>
+
+    </section>
+
+    <!-- Servicios -->
+    <section id="cursos">
+        <h3 class="titulo-seccion"> Mis Cursos</h3>
+        <div class="fila">
+            <div class="curso">
+                <img src="img/argentina-programa.png" alt="">
+                <h3> Desarrollo Full Stack </h3>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>  Java </li>
+                    <li>  HTML/CSS </li>
+                    <li>  MySQL </li>
+                    <li>  React </li>
+                </ul>
+            </div>
+            <div class="curso">
+                <img src="img/eduacacion-it.jpeg" alt="">
+                <img src="img/Santander.jpg" alt="">
+                <img src="img/fund-pescar.jpg" alt="">
+                <h3> Desarrollo Web Full Stack </h3>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>HTML/CSS</li>
+                    <li>JavaScript</li>
+                    <li>Node.js</li>
+                    <li>React</li>
+                    <li>MongoDB</li>
+                    <li>Git</li>
+
+                </ul>
+            </div>
+            <div class="curso">
+                <img src="img/quales.jpeg" alt="">
+                <h3>Data Process </h3>
+                <hr>
+                <p>Modelado y limpieza de datos</p>
+                <p>Desarrollo de procesamiento ETL</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- habilidades -->
+    <div class="contenedor-skills" id="skills">
+        <h3>HABILIDADES</h3>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span> Html & Css</p>
+                <span class="porcentaje">95%</span>
+            </div>
+            <div class="barra">
+                <div id="html" class="barra-progreso1"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span> JavaScript</p>
+                <span class="porcentaje">85%</span>
+            </div>
+            <div class="barra">
+                <div id="js" class="barra-progreso2"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span> Base de Datos</p>
+                <span class="porcentaje">80%</span>
+            </div>
+            <div class="barra">
+                <div id="bd" class="barra-progreso3"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span> Java</p>
+                <span class="porcentaje">95%</span>
+            </div>
+            <div class="barra">
+                <div id="java" class="barra-progreso4"></div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- Portafolio -->
+
+    <section id="proyectos">
+        <h3 class="titulo-seccion">Mis Proyectos</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/taza-libro-compu.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion del Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/taza-libro-compu.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion del Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/taza-libro-compu.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion del Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/taza-libro-compu.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion del Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/taza-libro-compu.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion del Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/taza-libro-compu.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion del Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contacto</h3>
+        <div class="contenedor-form">
+            <form action="">
+
+                <div class="fila-mitad">
+                    <input type="text" placeholder="Nombre completo" class="input-mitad">
+                    <input type="text" placeholder="Dirección de Email" class="input-mitad">
+                </div>
+
+                <div class="fila">
+                    <input type="text" placeholder="Tema..." class="input-full" >
+                </div>
+
+                <div class="fila"><textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje.." class="input-full"></textarea>
+                </div>
+
+                <input type="submit" value="Enviar mensaje" class="btn-enviar">
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Todos los derechos reservados</p>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-square-github"></i></a>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
