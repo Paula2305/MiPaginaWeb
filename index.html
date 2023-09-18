@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <script src="https://kit.fontawesome.com/a8568055c8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  </head>
-    <title>Paula Moreno - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<title>Paula Moreno - Portfolio</title>
 </head>
 
 <body>
@@ -17,14 +18,14 @@
         <div class="contenido">
             <header>
                 <div class="contenido-header">
-                    <h1> /PM/ </h1>
+                    <h3>polidev</h3>
                     <nav id="nav">
                         <ul id="links" class="">
-                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)" >Inicio</a> </li>
-                            <li><a href="#sobre-mi" onclick="seleccionar(this)" >Sobre mi</a> </li>
-                            <li><a href="#cursos" onclick="seleccionar(this)" >Cursos</a></li>
-                            <li><a href="#proyectos" onclick="seleccionar(this)" >Proyectos</a></li>
-                            <li><a href="#contacto" onclick="seleccionar(this)" >Contacto</a></li>
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">Inicio</a> </li>
+                            <li><a href="#sobre-mi" onclick="seleccionar(this)">Sobre mi</a> </li>
+                            <li><a href="#cursos" onclick="seleccionar(this)">Cursos</a></li>
+                            <li><a href="#proyectos" onclick="seleccionar(this)">Proyectos</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">Contacto</a></li>
                         </ul>
                     </nav>
                     <!-- menú responsive -->
@@ -72,10 +73,10 @@
     <section id="cursos">
         <h3 class="titulo-seccion"> Mis Cursos</h3>
         <div class="fila">
-            
-            <div class="curso" >
-                <div  class="face front">
-                    <img src="img/argentina-programa.png" alt="">
+
+            <div class="curso">
+                <div class="face front">
+                    <img src="img/arg-programa-sinfondo.png" alt="">
                     <h3> Desarrollo Full Stack </h3>
                     <hr>
                     <p> 2023 - Finalizado </p>
@@ -91,12 +92,12 @@
                     </ul>
                 </div>
             </div>
-            
-            <div class="curso" >
-                <div  class="face front">
-                    <img src="img/eduacacion-it.jpeg" alt="">
-                    <img src="img/Santander.jpg" alt="">
-                    <img src="img/fund-pescar.jpg" alt="">
+
+            <div class="curso">
+                <div class="face front">
+                    <img src="img/eduacacion-it-sinfondo.png" alt="">
+                    <img src="img/santander.png" alt="">
+                    <img src="img/fundacion-pescar-removebg-preview.png" alt="">
                     <h3> Desarrollo Web Full Stack </h3>
                     <hr>
                     <p> 2023 - Actualidad</p>
@@ -104,8 +105,7 @@
                 <div class="face back">
                     <h3> Competencias técnicas </h3>
                     <ul>
-                        <li> Html </li>
-                        <li> CSS </li>
+                        <li> Html/CSS </li>
                         <li> JavaScript </li>
                         <li> Git </li>
                         <li> React </li>
@@ -117,7 +117,7 @@
 
             <div class="curso">
                 <div class="face front">
-                    <img src="img/quales.jpeg"   alt="">
+                    <img src="img/quales-sinfondo.png" alt="">
                     <h3>Data Process </h3>
                     <hr>
                     <p> 2023 - Finalizado </p>
@@ -127,56 +127,42 @@
                     <ul>
                         <li>Modelado de Datos</li>
                         <li>Procesamiento ETL</li>
+                        <li>Store Procedure</li>
+                        <li>SQL</li>
                     </ul>
                 </div>
             </div>
-              
+
         </div>
     </section>
 
     <!-- habilidades -->
     <div class="contenedor-skills" id="skills">
         <h3>HABILIDADES</h3>
-        <div class="skill">
-            <div class="info">
-                <p><span class="lista"></span> Html & Css</p>
-                <span class="porcentaje">95%</span>
+
+        <div class="info">
+            <div class="skill">
+                <p>Frontend</p>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
             </div>
-            <div class="barra">
-                <div id="html" class="barra-progreso1"></div>
+            <div class="skill">
+                <p>Backend</p>
+                <li>Java</li>
+                <li>JavaScript</li>
+            </div>
+            
+            <div class="skill">
+                <p>Base de datos</p>
+                <ul>
+                    <li>MySql</li>
+                    <li>SQL Server</li>
+                </ul>
             </div>
         </div>
-
-        <div class="skill">
-            <div class="info">
-                <p><span class="lista"></span> JavaScript</p>
-                <span class="porcentaje">85%</span>
-            </div>
-            <div class="barra">
-                <div id="js" class="barra-progreso2"></div>
-            </div>
-        </div>
-
-        <div class="skill">
-            <div class="info">
-                <p><span class="lista"></span> Base de Datos</p>
-                <span class="porcentaje">80%</span>
-            </div>
-            <div class="barra">
-                <div id="bd" class="barra-progreso3"></div>
-            </div>
-        </div>
-
-        <div class="skill">
-            <div class="info">
-                <p><span class="lista"></span> Java</p>
-                <span class="porcentaje">95%</span>
-            </div>
-            <div class="barra">
-                <div id="java" class="barra-progreso4"></div>
-            </div>
-        </div>
-
 
     </div>
 
@@ -250,10 +236,11 @@
                 </div>
 
                 <div class="fila">
-                    <input type="text" placeholder="Tema..." class="input-full" >
+                    <input type="text" placeholder="Tema..." class="input-full">
                 </div>
 
-                <div class="fila"><textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje.." class="input-full"></textarea>
+                <div class="fila"><textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje.."
+                        class="input-full"></textarea>
                 </div>
 
                 <input type="submit" value="Enviar mensaje" class="btn-enviar">
@@ -271,7 +258,9 @@
     </footer>
 
     <script src="js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
