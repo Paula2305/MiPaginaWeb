@@ -129,6 +129,7 @@ html {
 /* ---- Sobre mi ------ */
 
 #sobre-mi {
+  background-color: var(--color-hover);
   max-width: 1300px;
   margin: auto;
   padding: 100px 15px;
@@ -149,7 +150,7 @@ html {
 }
 
 #sobre-mi .sobre-mi .titulo-seccion {
-  font-size: 22px;
+  font-size: 25px;
   text-transform: uppercase;
   color: #111135;
   text-decoration: underline;
@@ -164,8 +165,11 @@ html {
   font-weight: bold;
   margin: 20px 0;
 }
+
 #sobre-mi .sobre-mi h2 span {
-  color: var(--color-hover);
+  border-color: #000;
+  color: #f3f3f3;
+
 }
 
 #sobre-mi .sobre-mi p {
@@ -200,7 +204,8 @@ html {
 }
 
 #cursos .titulo-seccion {
-  font-size: 22px;
+  margin: 60px;
+  font-size: 25px;
   text-transform: uppercase;
   color: #111135;
   text-decoration: underline;
@@ -314,6 +319,7 @@ html {
 /* HABILIDADES */
 
 .contenedor-skills{
+    background-color: var(--color-hover);
     padding: 100px 0;
     text-align: center;
 }
@@ -475,6 +481,7 @@ html {
 /* CONTACTO */
 
 #contacto{
+  background-color: var(--color-hover);
   padding: 100px 15px;
 }
 
@@ -501,6 +508,9 @@ html {
 #contacto .contenedor-form .mitad{
   display: flex;
   justify-content: space-between;
+}
+#contacto .contenedor-form .fila-mitad{
+  margin-bottom: 10px;
 }
 
 #contacto .contenedor-form input,
@@ -535,8 +545,10 @@ html {
   border: #fff;
 }
 
+/* FOOTER */
+
 footer{
-  background-color: var(--color-hover);
+  background-color: #000;
   color: #fff;
   text-align: center;
   padding: 30px 0;
