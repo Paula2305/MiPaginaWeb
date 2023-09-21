@@ -197,13 +197,14 @@ html {
 /* Servicios  */
 
 #cursos {
+  height: 900px;
   padding: 50px 15px 100px;
   text-align: center;
   background-color: var(--color-hover);
 }
 
 #cursos .titulo-seccion {
-  margin-bottom: 60px;
+  margin: 40px 0 60px 0;
   font-size: 25px;
   text-transform: uppercase;
   color: #111135;
@@ -216,6 +217,7 @@ html {
 #cursos .fila {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   max-width: 1100px;
   margin: 30px auto;
 }
@@ -225,7 +227,7 @@ html {
   width: 300px;
   height: 300px;
   padding: 30px;
-  margin: 0 5px;
+  margin: 0 5px 10px 5px;
   border-radius: 50px;
   transition: 0.5s;
   perspective: 1000px; /* Ajusta la perspectiva para un efecto más suave */
@@ -318,6 +320,7 @@ html {
 /* HABILIDADES */
 
 .contenedor-skills {
+  height: 100vh;
   background: linear-gradient(var(--color-hover), rgba(33,16,16,.8)),url("../img/computadora-escribiendo.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -602,6 +605,7 @@ footer a {
 
 /* Responsive */
 
+
 @media screen and (max-width: 800px) {
   .redes {
     display: none;
@@ -653,7 +657,14 @@ footer a {
     font-size: 25px;
     text-align: center;
   }
+
+  #sobre-mi .sobre-mi p{
+    margin: 0 15px;
+    text-align:justify;
+  }
+
   #cursos {
+    height: 2100px;
     padding: 50px 15px;
   }
   #cursos .fila {
