@@ -21,7 +21,7 @@ html {
     url("../img/fondo-3.jpg");
   background-size: cover;
   background-position: top center;
-  height: 80vh;
+  height: 90vh;
 }
 
 #inicio .contenido header {
@@ -80,7 +80,7 @@ html {
 
 #inicio .contenido .presentacion {
   max-width: 900px;
-  height: 80vh;
+  height: 90vh;
   margin: auto;
   color: var(--color-basic);
   display: flex;
@@ -91,9 +91,10 @@ html {
 }
 
 #inicio .contenido .presentacion h2 {
-  font-size: 55px;
+  font-size: 60px;
   margin-bottom: 25px;
   text-align: center;
+  font-weight: 600;
 }
 
 #inicio .contenido .presentacion .descripcion {
@@ -138,7 +139,7 @@ html {
 }
 
 #sobre-mi .contenedor-foto {
-  max-width: 500px;
+  max-width: 450px;
   margin-right: 80px;
 }
 
@@ -149,8 +150,12 @@ html {
   background-color: #f3f3f3;
 }
 
+#sobre-mi .sobre-mi{
+  max-width: 700px;
+}
+
 #sobre-mi .sobre-mi .titulo-seccion {
-  font-size: 25px;
+  font-size: 30px;
   text-transform: uppercase;
   color: #111135;
   text-decoration: underline;
@@ -161,7 +166,7 @@ html {
 }
 
 #sobre-mi .sobre-mi h2 {
-  font-size: 34px;
+  font-size: 40px;
   font-weight: bold;
   margin: 20px 0;
 }
@@ -172,10 +177,11 @@ html {
 }
 
 #sobre-mi .sobre-mi p {
-  font-size: 20px;
+  font-size: 25px;
   line-height: 25px;
   color: #111135;
   margin-bottom: 12px;
+  text-align: justify;
 }
 
 #sobre-mi .sobre-mi a {
@@ -205,7 +211,7 @@ html {
 
 #cursos .titulo-seccion {
   margin: 40px 0 60px 0;
-  font-size: 25px;
+  font-size: 30px;
   text-transform: uppercase;
   color: #111135;
   text-decoration: underline;
@@ -331,6 +337,7 @@ html {
 }
 
 .contenedor-skills h3 {
+  color: #f3f3f3;
   font-weight: 600;
   font-size: 30px;
   margin-bottom: 60px;
@@ -356,6 +363,7 @@ html {
 }
 
 .contenedor-skills .info .skill .titulo {
+  color: #f3f3f3;
   margin-bottom: 15px;
   font-weight: 600;
   font-size: 19px;
@@ -391,34 +399,6 @@ html {
   background-color: #d00000;
 }
 
-/* se usa js */
-.contenedor-skills .skill .barra .barra-progreso1 {
-  background-color: #fff;
-  width: 95%;
-  height: 6px;
-  animation: progreso1 2s forwards;
-}
-
-.contenedor-skills .skill .barra .barra-progreso2 {
-  background-color: #fff;
-  width: 85%;
-  height: 6px;
-  animation: progreso2 2s forwards;
-}
-
-.contenedor-skills .skill .barra .barra-progreso3 {
-  background-color: #fff;
-  width: 80%;
-  height: 6px;
-  animation: progreso3 2s forwards;
-}
-
-.contenedor-skills .skill .barra .barra-progreso4 {
-  background-color: #fff;
-  width: 95%;
-  height: 6px;
-  animation: progreso4 2s forwards;
-}
 
 /* animaciones */
 
@@ -467,7 +447,7 @@ html {
 #proyectos .titulo-seccion {
   margin-bottom: 60px;
   text-align: center;
-  font-size: 22px;
+  font-size: 30px;
   text-transform: uppercase;
   color: #111135;
   text-decoration: underline;
@@ -528,7 +508,7 @@ html {
 #contacto .titulo-seccion {
   margin-bottom: 20px;
   text-align: center;
-  font-size: 22px;
+  font-size: 30px;
   text-transform: uppercase;
   color: #111135;
   text-decoration: underline;
@@ -605,8 +585,26 @@ footer a {
 
 /* Responsive */
 
+@media screen and (width > 1300px) {
+  #sobre-mi .contenedor-foto {
+    max-width: 700px;
+    margin-right: 80px;
+  }
+  
+  #sobre-mi .contenedor-foto img {
+    padding: 20px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #f3f3f3;
+  }
+  
+  #sobre-mi .sobre-mi{
+    max-width: 1000px;
+  }
 
-@media screen and (max-width: 800px) {
+}
+
+@media screen and (width < 800px) {
   .redes {
     display: none;
   }
@@ -698,3 +696,5 @@ footer a {
     margin-bottom: 15px;
   }
 }
+
+
