@@ -17,19 +17,17 @@ document.addEventListener("DOMContentLoaded", function(){
         if(e.target.value.trim() === ""){ 
             mostrarAlerta(`El campo ${e.target.id} es obligatorio`, e.target.parentElement);
         }else{
-            console.log('hay algo')
+            console.log('hay algo');
         }
     }
 
     function mostrarAlerta(mensaje, referencia){
         const error = document.createElement('P');
         error.textContent = mensaje;
-        error.style.backgroundColor = "red";
-        error.style.color = "white";
-        error.style.display = "inline-block";
-        error.style.margin = "5px";  
+        error.classList.add("bg-orange-600", "text-black", "p-2", "text-center");
 
-        referencia.insertAdjacentElement('afterend', error);
+        referencia.appendChild(error);
+        
 
     }
 
