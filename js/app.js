@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function(){
     function mostrarAlerta(mensaje, referencia){
         const error = document.createElement('P');
         error.textContent = mensaje;
-        error.classList.add("bg-orange-600", "text-black", "p-2", "text-center");
+        error.classList.add("tw-bg-orange-600", "tw-text-black", "tw-p-2", "tw-text-center");
 
         referencia.appendChild(error);
         
