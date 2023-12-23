@@ -31,10 +31,20 @@
             form.mensaje = '';
 
             formulario.reset();
-            comprobarFormulario()
+            comprobarFormulario();
 
-            
-        }, 3000);
+            const alertaExito = document.createElement('P');
+            alertaExito.classList.add('bg-green-400', 'text-white','p-2','text-center', 'rounded-lg', 'mt-10','font-bold','text-sm','uppercase');
+
+            alertaExito.textContent = 'Mensaje enviado correctamente';
+
+            formulario.appendChild(alertaExito);
+
+            setTimeout(()=>{
+                alertaExito.remove();
+            }, 2000);
+
+        }, 1000);
 
 
     }
