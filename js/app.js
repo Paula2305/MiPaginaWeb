@@ -18,6 +18,27 @@
     inputAsunto.addEventListener("input", validar);
     inputMensaje.addEventListener("input", validar);
 
+    formulario.addEventListener('submit', enviarEmail);
+
+    function enviarEmail(e){
+        e.preventDefault();
+
+        setTimeout(() => {
+
+            form.nombre = '';
+            form.email = '';
+            form.asunto = '';
+            form.mensaje = '';
+
+            formulario.reset();
+            comprobarFormulario()
+
+            
+        }, 3000);
+
+
+    }
+
     function validar(e){
         // console.log(e.target.value);
 
@@ -79,6 +100,8 @@
             btnSubmit.disabled = false;
         
     }
+
+
 
 
 
