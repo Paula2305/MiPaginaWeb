@@ -558,13 +558,16 @@ html {
   padding: 10px 15px;
   font-size: 18px;
   font-weight: bold;
+  background-color: var(--color-hover);
+  opacity: 0.5;
+  color: white;
 }
 
-#contacto .btn-enviar:hover {
+/* #contacto .btn-enviar:hover {
   background-color: var(--color-hover);
   color: #fff;
   border: #fff;
-}
+} */
 
 /* FOOTER */
 
