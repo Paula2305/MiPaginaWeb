@@ -12,6 +12,7 @@
     const inputNombre = document.querySelector("#nombre");
     const formulario = document.querySelector('#formulario');
     const btnSubmit = document.querySelector('.btn-enviar')
+    const spinner = document.querySelector('.spinner')
 
     inputNombre.addEventListener("input", validar);
     inputEmail.addEventListener("input", validar);
@@ -23,7 +24,11 @@
     function enviarEmail(e){
         e.preventDefault();
 
+        spinner.style.visibility = 'visible';
+
         setTimeout(() => {
+
+            spinner.style.visibility = 'hidden';
 
             form.nombre = '';
             form.email = '';
@@ -42,11 +47,9 @@
 
             setTimeout(()=>{
                 alertaExito.remove();
-            }, 2000);
+            }, 3000);
 
-        }, 1000);
-
-
+        }, 3000);
     }
 
     function validar(e){
