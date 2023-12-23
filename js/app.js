@@ -1,5 +1,3 @@
-document.addEventListener("DOMContentLoaded", function(){
-
     const inputEmail = document.querySelector("#email");
     const inputAsunto = document.querySelector("#asunto");
     const inputMensaje = document.querySelector("#mensaje");
@@ -22,15 +20,20 @@ document.addEventListener("DOMContentLoaded", function(){
     }
 
     function mostrarAlerta(mensaje, referencia){
+        const alerta = document.querySelector('.tw-bg-orange-600');
+        if(alerta){
+            alerta.remove()
+        }
+
         const error = document.createElement('P');
         error.textContent = mensaje;
-        error.classList.add("tw-bg-orange-600", "tw-text-black", "tw-p-2", "tw-text-center");
+           error.classList.add("tw-bg-orange-600", "tw-text-black", "tw-p-2", "tw-text-center");
 
         referencia.appendChild(error);
         
 
     }
 
-})
+
 
 

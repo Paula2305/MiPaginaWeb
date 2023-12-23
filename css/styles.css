@@ -130,7 +130,6 @@ html {
 /* ---- Sobre mi ------ */
 
 #sobre-mi {
-  background-color: var(--color-hover);
   width: 100%;
   margin: auto;
   padding: 100px 50px 20px;
@@ -173,7 +172,7 @@ html {
 
 #sobre-mi .sobre-mi h2 span {
   border-color: #000;
-  color: #f3f3f3;
+  color: var(--color-hover);
 }
 
 #sobre-mi .sobre-mi p {
@@ -200,13 +199,12 @@ html {
   border: #fff;
 }
 
-/* Servicios  */
+/* Servicios - Cursos  */
 
 #cursos {
   height: 900px;
   padding: 50px 15px 100px;
   text-align: center;
-  background-color: var(--color-hover);
 }
 
 #cursos .titulo-seccion {
@@ -262,15 +260,17 @@ html {
 }
 
 #cursos .fila .curso .back {
-  padding: 30px;
+  padding-right: 30px;
   transform: rotateY(180deg);
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
 }
 
-#cursos .fila .curso .back ul {
-  padding-right: 30px;
+#cursos .fila .curso .back a{
+  display: inline-block;
+  padding-top: 15px;
+  color: #0077b6;
 }
 
 #cursos .fila .curso .back ul li {
