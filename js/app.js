@@ -19,12 +19,14 @@
     inputAsunto.addEventListener("input", validar);
     inputMensaje.addEventListener("input", validar);
 
-    formulario.addEventListener('submit', enviarEmail);
+    formulario.addEventListener('submit', confirmarEnvio);
 
-    function enviarEmail(e){
+    function confirmarEnvio(e){
         e.preventDefault();
 
         spinner.style.visibility = 'visible';
+
+        enviarEmail();
 
         setTimeout(() => {
 
@@ -112,6 +114,26 @@
             btnSubmit.style.opacity = '1';
             btnSubmit.disabled = false;
         
+    }
+
+    function enviarEmail(){
+        let _body = {
+            nombre: inputNombre.value,
+            email: inputEmail.value,
+            asunto: inputAsunto.value,
+            mensaje: inputMensaje.value
+        };
+
+        fetch("http://localhost:3950/send_email",{
+            method: "POST",
+            body: JSON.stringify(_body),
+            headers: {
+                "Content-Type": "application/json",
+              },
+        })
+        .then((response) => response.json())
+        .then((json) => console.log(json))
+        .catch((err) => console.log(err));
     }
 
 

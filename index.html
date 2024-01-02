@@ -10,7 +10,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link href="/dist/output.css" rel="stylesheet">
+    
     <link rel="stylesheet" href="css/spinner.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 </head>
 <title>Paula Moreno - Portfolio</title>
 </head>
@@ -21,13 +23,13 @@
         <div class="contenido">
             <header>
                 <div class="contenido-header">
-                    <h3 class="tw-bg-orange-600">polidev</h3>
+                    <h3 class="bg-[#9d4edd]">/polidev/</h3>
                     <nav id="nav">
                         <ul id="links" class="">
                             <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">Inicio</a> </li>
                             <li><a href="#sobre-mi" onclick="seleccionar(this)">Sobre mi</a> </li>
                             <li><a href="#cursos" onclick="seleccionar(this)">Cursos</a></li>
-                            <li><a href="#proyectos" onclick="seleccionar(this)">Proyectos</a></li>
+                            <!-- <li><a href="#proyectos" onclick="seleccionar(this)">Proyectos</a></li> -->
                             <li><a href="#contacto" onclick="seleccionar(this)">Contacto</a></li>
                         </ul>
                     </nav>
@@ -38,16 +40,17 @@
 
                     <!-- redes sociales -->
                     <div class="redes">
-                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="#"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://www.linkedin.com/in/paula-moreno--/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Paula2305"><i class="fa-brands fa-square-github"></i></a>
                     </div>
                 </div>
             </header>
 
             <div class="presentacion">
                 <h2> Paula Moreno </h2>
+                <!-- redes sociales -->
                 <p class="descripcion"> Desarrolladora Web Full Stack </p>
-                <a href="https://drive.google.com/file/d/1KTPPK6zsBu_zKkxaD8JZNej9jLCF0VW8/view?usp=sharing" target="_blank">Descargar CV</a>
+                <a href="https://drive.google.com/file/d/1ZcGowPBu4MQAUI15WGhnwI3PYsRP6gUw/view?usp=sharing" target="_blank">Descargar CV</a>
             </div>
 
         </div>
@@ -56,23 +59,24 @@
 
     <!-- Sobre mi -->
     <section id="sobre-mi">
-            <div class="contenedor-foto">
-                <img src="../img/yo.jpg" alt="">
-            </div>
-            <div class="sobre-mi">
-                <p class="titulo-seccion"> Sobre mi </p>
-                <h2> Hola, soy <span>Paula Moreno</span></h2>
-                <p> ¡Bienvenid@ a mi portafolio! Mi camino comenzó con la investigación en Bases de Datos relacionales, donde aprendí a trabajar con SQL. Con el tiempo, también estudié Java y me apasionó el backend. Estas bases me dieron el impulso para continuar mi carrera como programadora en la UTN, teniendo en claro que todos los días se aprende algo nuevo.</p>
-                <p>Actualmente, estoy estudiando Desarrollo Web Full Stack, por lo que decidí crear este portafolio para que puedas ver mi desarrollo personal y profesional. Te invito a que sigas recorriéndolo.</p>
+            <h3 class="titulo-seccion"> Sobre mi </h3>
+            <div class="contenedor-about">
+                <div class="contenedor-foto">
+                    <img src="../img/yo.jpg" alt="">
+                </div>
+                <div class="sobre-mi">
+                    <h2> ¡Bienvenid@ a mi portafolio!</h2>
+                    <p>  Mi camino comenzó con la investigación en BD relacionales. Con el tiempo, estudié Java y me apasionó el backend. Estas bases me dieron el impulso para continuar mi carrera como programadora en la UTN, teniendo en claro que todos los días se aprende algo nuevo.</p>
+                    <p>En el 2023 me gradué como Desarrolladora Web Full Stack en el Banco Santander.</p>
+                    <p>Cree este portafolio para que puedas seguir mi desarrollo personal y profesional. ¡Te invito a explorarlo!</p>
+                </div>
             </div>
     </section>
 
     <!-- Servicios -->
     <section id="cursos">
-        <hr>
         <h3 class="titulo-seccion"> Mis Cursos</h3>
         <div class="fila">
-
             <div class="curso">
                 <div class="face front">
                     <img src="img/eduacacion-it-sinfondo.png" alt="">
@@ -202,28 +206,105 @@
     <div class="contenedor-skills" id="skills">
         <h3>HABILIDADES</h3>
 
-        <div class="info">
-            <div class="skill">
-                <p class="titulo">Frontend</p>
+        <div class="skill">
 
-                <p class="html habilidad"> <span><i class="fa-brands fa-html5"></i> HTML </span></p>
-                <p class="css habilidad"> <span><i class="fa-brands fa-css3-alt"></i> CSS </span></p>
-                <p class="javascript habilidad"> <span> <i class="fa-brands fa-js"></i> JavaScript </span></p>
+            <div class="">
+                <p class="tecnologias">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" />
+                </p>
+                <p class="texto">MySql</p>
             </div>
 
-            <div class="skill">
-                <p class="titulo">Backend</p>
-
-                <p class="java habilidad"> <span><i class="fa-brands fa-java"></i> Java </span></p>
-                <p class="javascript habilidad"> <span><i class="fa-brands fa-js"></i> JavaScript</span></p>
+            <div class="">
+                <p class="tecnologias">            
+                    <i class="devicon-microsoftsqlserver-plain"></i>
+                </p>
+                <p class="texto">Sql Server</p>
             </div>
 
-            <div class="skill">
-                <p class="titulo">Base de datos</p>
-
-                <p class="habilidad"> <span><i class="fa-solid fa-database"></i> MySql</span></p>
-                <p class="habilidad"> <span><i class="fa-solid fa-database"></i> SQL Server</span></p>
+            <div class="">
+                <p class="tecnologias">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" />
+                </p>
+                <p class="texto">MongoDB</p>
             </div>
+
+            <div class="">
+                <p class="tecnologias">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" />
+                </p>
+                <p class="texto">Figma</p>
+            </div>
+
+            <div class="">
+                <p class="tecnologias">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" />
+                </p>
+                <p class="texto">Tailwindcss</p>
+            </div>
+
+            <div class="">
+                <p class="tecnologias">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
+                </p>
+                <p class="texto">Bootstrap</p>
+            </div>
+
+            <div class="">
+                <p class="tecnologias">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+                </p>
+                <p class="texto">React</p>
+            </div>
+
+            <div class="">
+                <p class="tecnologias">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg" />
+                </p>
+                <p class="texto">Trello</p>
+            </div>
+
+            <div class="">
+                <p class="tecnologias">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
+                </p>
+                <p class="texto">Node.js</p>
+            </div>
+
+            <div class="">
+                <p class="tecnologias">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
+                </p>
+                <p class="texto">Java</p>
+            </div>
+
+            <div class="">
+                <p class="tecnologias">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+                </p>
+                <p class="texto">Html</p>
+            </div>
+
+            <div class="">
+                <p class="tecnologias">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+                </p>
+                <p class="texto">Css</p>
+            </div>
+
+            <div class="">
+                <p class="tecnologias">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+                </p>
+                <p class="texto">Git</p>
+            </div>
+
+            <div class="">
+                <p class="tecnologias">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" />
+                </p>
+                <p class="texto">NPM</p>
+            </div>    
 
         </div>
 
@@ -231,7 +312,7 @@
 
     <!-- Portafolio -->
 
-    <section id="proyectos">
+    <!-- <section id="proyectos">
         <h3 class="titulo-seccion">Mis Proyectos</h3>
         <div class="fila">
             <div class="proyecto">
@@ -259,7 +340,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Contacto -->
     <section id="contacto">
@@ -297,8 +378,8 @@
     <footer>
         <p>Todos los derechos reservados</p>
         <div class="redes">
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="#"><i class="fa-brands fa-square-github"></i></a>
+            <a href="https://www.linkedin.com/in/paula-moreno--/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Paula2305"><i class="fa-brands fa-square-github"></i></a>
         </div>
     </footer>
 
