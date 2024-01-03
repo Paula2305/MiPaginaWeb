@@ -157,7 +157,7 @@ html {
 #sobre-mi .contenedor-about{
   display: flex;
   justify-content: space-around;
-  margin: 0 100px;
+  margin: 0 40px;
 }
 
 #sobre-mi .contenedor-about .contenedor-foto {
@@ -181,8 +181,7 @@ html {
 #sobre-mi .contenedor-about .sobre-mi h2 {
   font-size: 40px;
   font-weight: bold;
-  padding-top: 20px;
-  margin: 20px 0;
+  margin-bottom: 20px;
   color: var(--color-texto);
 }
 
@@ -217,7 +216,7 @@ html {
 /* Servicios - Cursos  */
 
 #cursos {
-  height: 900px;
+  height: auto;
   padding: 50px 15px 100px;
   text-align: center;
   background-color: var(--fondo-color);
@@ -344,14 +343,14 @@ html {
 /* HABILIDADES */
 
 .contenedor-skills {
-  height: 100vh;
+  height: auto;
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url("../img/computadora-escribiendo-.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
-  padding: 125px 0;
+  padding: 110px 0;
   text-align: center;
 }
 
@@ -376,7 +375,7 @@ html {
   justify-content: space-around;
   flex-wrap: wrap;
   padding: 50px;
-  margin: 0 200px;
+  margin: 10px 100px;
   text-align: center;
 }
 
@@ -585,12 +584,13 @@ footer {
   padding: 30px 0;
 }
 
-footer a {
+footer .redes2 a {
   text-decoration: none;
   color: #fff;
   display: inline-block;
   margin: 5px;
   font-size: 26px;
+
 }
 
 /* Responsive */
@@ -679,15 +679,17 @@ footer a {
   #sobre-mi #sobre-mi .titulo-seccion {
     text-align: center;
   }
+
   #sobre-mi .sobre-mi h2 {
     font-size: 25px;
+    padding-top: 30px;
     display: flex;
     justify-content: center;
     text-align: center;
   }
 
   #sobre-mi .sobre-mi p{
-    margin: 0 15px;
+    margin: 0 30px;
     display: flex;
     justify-content: center;
   }
@@ -735,6 +737,7 @@ footer a {
   #proyectos .fila .proyecto {
     margin: 10px auto;
   } */
+
   #contacto {
     padding: 50px 15px;
   }
@@ -746,6 +749,42 @@ footer a {
     width: 100%;
     margin-bottom: 15px;
   }
+}
+
+@media screen and (width < 1024px) and (width > 800px){
+  #sobre-mi .contenedor-about .contenedor-foto {
+    max-width: 300px;
+    margin-right: 50px;
+  }
+
+  #sobre-mi .contenedor-about .contenedor-foto img {
+    margin: 0;
+  }
+
+  #sobre-mi .contenedor-about .sobre-mi{
+    max-width: 500px;
+  }
+
+  #cursos {
+    height: auto;
+  }
+
+  #cursos .fila .curso {
+    margin: 10px auto;
+  }
+
+  .contenedor-skills{
+    height: auto;
+  }
+
+}
+
+@media screen and (width < 400px){
+
+  footer {
+    padding: 30px 0 90px;
+  }
+  
 }
 
 

@@ -122,7 +122,7 @@
             email: inputEmail.value,
             asunto: inputAsunto.value,
             mensaje: inputMensaje.value
-        };
+        }; 
 
         fetch("http://localhost:3950/send_email",{
             method: "POST",
