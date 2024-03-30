@@ -138,7 +138,7 @@ html {
 #sobre-mi {
   width: 100%;
   margin: auto;
-  padding: 50px 50px 100px;
+  padding: 10% 15% 10%;
   color: #111135;
   background-color: var(--fondo-color);
 }
@@ -157,7 +157,7 @@ html {
 
 #sobre-mi .contenedor-about{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 0 40px;
 }
 
@@ -169,7 +169,7 @@ html {
 
 #sobre-mi .contenedor-about .contenedor-foto img {
   padding: 20px;
-  max-width: 300px;
+  max-width: 80%;
   border-radius: 20px;
   background-color: #9d4edd;
   margin: 0 120px;
@@ -616,11 +616,11 @@ footer .redes2 a:hover {
 
 /* Responsive */
 
-@media screen and (width > 1300px) {
+/* @media screen and ( min-width : 1300px) {
 
   #sobre-mi .contenedor-foto {
-    max-width: 700px;
-    margin-right: 80px;
+    max-width: 50%;
+    margin-right: 4%;
   }
   
   #sobre-mi .contenedor-foto img {
@@ -635,9 +635,9 @@ footer .redes2 a:hover {
   }
   
 
-}
+} */
 
-@media screen and (width < 800px) {
+@media screen and (max-width: 1024px) {
   .redes {
     display: none;
   }
@@ -716,15 +716,17 @@ footer .redes2 a:hover {
   }
 
   #cursos {
-    height: 2100px;
-    padding: 50px 15px;
+    height: auto;
   }
-  #cursos .fila {
-    display: block;
-  }
+
   #cursos .fila .curso {
     margin: 10px auto;
   }
+
+  .contenedor-skills{
+    height: auto;
+  }
+
 
   .contenedor-skills #skills{
     padding: 50px 20px;
@@ -768,18 +770,19 @@ footer .redes2 a:hover {
   }
 }
 
-@media screen and (width < 1024px) and (width > 800px){
+/* @media screen and (max-width: 1024px) and (min-width: 800px){
   #sobre-mi .contenedor-about .contenedor-foto {
     max-width: 300px;
     margin-right: 50px;
   }
 
   #sobre-mi .contenedor-about .contenedor-foto img {
+    max-width: 80%;
     margin: 0;
   }
 
   #sobre-mi .contenedor-about .sobre-mi{
-    max-width: 500px;
+    max-width: 50%;
   }
 
   #cursos {
@@ -794,7 +797,7 @@ footer .redes2 a:hover {
     height: auto;
   }
 
-}
+} */
 
 @media screen and (width < 400px){
 
