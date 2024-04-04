@@ -138,13 +138,13 @@ html {
 #sobre-mi {
   width: 100%;
   margin: auto;
-  padding: 10% 15% 10%;
+  padding: 10% 5%;
   color: #111135;
   background-color: var(--fondo-color);
 }
 
 #sobre-mi .titulo-seccion {
-  margin: 40px 0 60px 0;
+  margin-bottom: 60px ;
   font-size: 30px;
   text-transform: uppercase;
   color: var(--color-texto);
@@ -152,31 +152,29 @@ html {
   text-decoration-color: var(--color-decoracion);
   text-decoration-thickness: 5px;
   font-weight: 600;
-  text-align: center;
 }
 
 #sobre-mi .contenedor-about{
   display: flex;
   justify-content: space-between;
-  margin: 0 40px;
 }
 
 #sobre-mi .contenedor-about .contenedor-foto {
-  max-width: 450px;
+  max-width: 40%;
   margin-right: 20px;
   padding-top: 5px;
 }
 
 #sobre-mi .contenedor-about .contenedor-foto img {
   padding: 20px;
-  max-width: 80%;
+  max-width: 60%;
   border-radius: 20px;
   background-color: #9d4edd;
-  margin: 0 120px;
+  margin: 0 30%;
 }
 
 #sobre-mi .contenedor-about .sobre-mi{
-  max-width: 700px;
+  max-width: 60%;
 }
 
 #sobre-mi .contenedor-about .sobre-mi h2 {
@@ -198,21 +196,7 @@ html {
   margin-bottom: 12px;
 }
 
-#sobre-mi .contenedor-about .sobre-mi a {
-  display: inline-block;
-  text-decoration: none;
-  color: #000;
-  border-radius: 30px;
-  padding: 10px 20px;
-  border: 1px solid black;
-  margin-top: 30px;
-}
 
-#sobre-mi .contenedor-about .sobre-mi a:hover {
-  background-color: var(--color-decoracion);
-  color: #fff;
-  border: #fff;
-}
 
 /* Servicios - Cursos  */
 
@@ -616,28 +600,57 @@ footer .redes2 a:hover {
 
 /* Responsive */
 
-/* @media screen and ( min-width : 1300px) {
+@media screen and ( max-width : 1280px) {
 
-  #sobre-mi .contenedor-foto {
-    max-width: 50%;
-    margin-right: 4%;
-  }
-  
-  #sobre-mi .contenedor-foto img {
-    padding: 20px;
+  #sobre-mi {
     width: 100%;
-    border-radius: 20px;
-    background-color: #f3f3f3;
+    margin: auto;
+    padding: 10% 5%;
+    color: #111135;
+    background-color: var(--fondo-color);
   }
   
-  #sobre-mi .sobre-mi{
-    max-width: 1000px;
+  #sobre-mi .titulo-seccion {
+    margin-bottom: 60px ;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: var(--color-texto);
+    text-decoration: underline;
+    text-decoration-color: var(--color-decoracion);
+    text-decoration-thickness: 5px;
+    font-weight: 600;
   }
   
+  
+  #sobre-mi .contenedor-about .sobre-mi{
+    max-width: 60%;
+  }
+  
+  #sobre-mi .contenedor-about .sobre-mi h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--color-texto);
+  }
+  
+  #sobre-mi .contenedor-about .sobre-mi h2 span {
+    border-color: #000;
+    color: var(--color-decoracion);
+  }
+  
+  #sobre-mi .contenedor-about .sobre-mi p {
+    font-size: 25px;
+    line-height: 25px;
+    color: var(--color-texto);
+    margin-bottom: 12px;
+  }
+  
+  
 
-} */
+} 
 
-@media screen and (max-width: 1024px) {
+
+@media screen and (max-width: 800px) {
   .redes {
     display: none;
   }
